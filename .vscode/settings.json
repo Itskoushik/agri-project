@@ -11,7 +11,7 @@
             "driver": "MySQL",
             "name": "agri proj",
             "database": "agri",
-            "username": "sqluser",
+            "username": "root",
             "password": "koushik12345"
         }
     ]

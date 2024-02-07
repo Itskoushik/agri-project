@@ -2,23 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "mysqlOptions": {
-  "authProtocol": "default",
-  "enableSsl": "Disabled"
-  },
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "previewLimit": 50,
-  "server": "localhost",
-  "port": 3306,
-  "driver": "MySQL",
-  "name": "agri proj",
-  "database": "agri",
-  "username": "sqluser",
-  "password": "koushik12345"
-    
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -30,4 +17,3 @@
     "nodemon": "^3.0.3"
   }
 }
-
