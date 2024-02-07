@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-
+import React, { useEffect, useState } from 'react';
+import './App.css';
 function App() {
   const  [data, setData] = useState([])
   useEffect(() => {
