@@ -3,23 +3,23 @@ import React from 'react';
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {employee: []};
+        this.state = {belgavi: []};
         this.headers = [
-            { key: 'id', label: 'Id'},
-            { key: 'name', label: 'Name' },
-            { key: 'position', label: 'Position' },
-            { key: 'office', label: 'Office' },
-            { key: 'age', label: 'Age' },
-            { key: 'salary', label: 'Salary' }
+            { key: 'F.no', label: 'F.no'},
+            { key: 'Farmer name', label: 'Farmer name' },
+            { key: 'Requirement', label: 'Requirement' },
+            { key: 'Quantity', label: 'Quantity' },
+            { key: 'Status', label: 'Status' },
+            { key: 'Ph.no', label: 'Ph.no' }
         ];
         this.state = { checkedBoxes: [] };
-        this.deleteEmployee = this.deleteEmployees.bind(this);
+        this.deletebelgavi = this.deletebelgavi.bind(this);
         this.toggleCheckbox = this.toggleCheckbox.bind(this);
     }
      
-    deleteEmployees = (event) => {
+    deletebelgavi = (event) => {
         event.preventDefault();
-        if(window.confirm('Are you sure, want to delete the selected employee?')) {
+        if(window.confirm('Are you sure, want to delete the selected farmer detail?')) {
             alert(this.state.checkedBoxes + " Succesfully Deleted");
         }
     }
@@ -41,14 +41,14 @@ class App extends React.Component {
     }
      
     componentDidMount() {
-        fetch('http://localhost/devtest/reactjs/employee.php/').then(response => {
+        fetch('hhttp://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=detail&table=belagavi').then(response => {
             console.log(response);
             return response.json();
           }).then(result => {
             // Work with JSON data here
             console.log(result);
             this.setState({
-                employee_rs:result
+                belgavi_rs:result
             }); 
           }).catch(err => {
             // Do something for an error here
@@ -57,7 +57,7 @@ class App extends React.Component {
     }
          
     render() {
-        const employeeFound = this.state.employee_rs && this.state.employee_rs.length;
+        const belgaviFound = this.state.employee_rs && this.state.employee_rs.length;
         if(employeeFound) {
             return (
                 <div className="container"><h1>ReactJS Fetch Data from Database with PHP Mysql</h1>
