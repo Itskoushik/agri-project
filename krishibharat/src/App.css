@@ -1,107 +1,113 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .App {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .topPanel {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .workingspace {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  
-  .dropdown-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dropdown {
-    margin-bottom: 20px;
-  }
-  
-  .select-region {
-    width: 100%;
-    padding: 10px;
-    font-style: italic,bold;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .selected-region {
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-  }
-  
-  .table th, .table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .previous-page, .update-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    width: 48%; 
-    text-align: center;
-  }
-  
-  .previous-page:hover, .update-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .update-button {
-    background-color: #28a745;
-  }
-  
-  .update-button:hover {
-    background-color: #218838;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
 
-  .footer {
-    background-color: #32af5b;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    font-size: small;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topPanel {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.workingspace {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.dropdown-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.select-region {
+  width: 100%;
+  padding: 10px;
+  font-style: italic, bold;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.selected-region {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.update-button,
+.add-row-button,
+.previous-page {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.update-button:hover,
+.add-row-button:hover,
+.previous-page:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.update-button {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.update-button:hover {
+  background-color: #218838;
+}
+
+.footer {
+  background-color: #32af5b;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: small;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
