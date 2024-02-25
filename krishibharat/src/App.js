@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
@@ -88,15 +87,16 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" >
       <div className='topPanel'>
         <Navigate />
       </div>
       <div className='workingspace'>
+        
         <div className="dropdown-container">
           {showDropdown && (
             <div className="dropdown">
-              <label>Select Region:</label>
+              <label>Region </label>
               <select className="select-region" onChange={(e) => handleRegionSelect(e.target.value)}>
                 <option value="">-- Select Region --</option>
                 {regions.map(region => (
