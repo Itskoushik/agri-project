@@ -86,6 +86,9 @@ function App() {
     setRegionData([]);
   };
 
+
+
+  
   return (
     <div className="App" >
       <div className='topPanel'>
@@ -96,7 +99,7 @@ function App() {
         <div className="dropdown-container">
           {showDropdown && (
             <div className="dropdown">
-              <label>Region </label>
+              <label>select Region </label>
               <select className="select-region" onChange={(e) => handleRegionSelect(e.target.value)}>
                 <option value="">-- Select Region --</option>
                 {regions.map(region => (
