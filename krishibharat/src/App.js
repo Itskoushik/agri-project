@@ -99,7 +99,6 @@ function App() {
         <div className="dropdown-container">
           {showDropdown && (
             <div className="dropdown">
-              <label>               </label>
               <select className="select-region" onChange={(e) => handleRegionSelect(e.target.value)}>
                 <option value="">-- Select Region --</option>
                 {regions.map(region => (
