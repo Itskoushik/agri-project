@@ -20,14 +20,15 @@ body {
 .workingspace {
   display: flex;
   flex: 1;
-  background-image: url('./Components/2.png');
+  background-image: url('./Components/sk1.jpg');
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 20px;
   position: inherit;
   background-size: cover;
   background-position: center;
+ 
   
 }
 
@@ -113,8 +114,8 @@ body {
 }
 
 .footer {
-  background-color: #32af5b;
-  color: #fff;
+    background-color: #0f5025;
+  color: #d1c79c;
   text-align: center;
   padding-top: 15px;
   font-size: small;
