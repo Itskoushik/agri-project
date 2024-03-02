@@ -1,8 +1,9 @@
-.topPanel {
+  .topPanel {
     width: 100%;
-    background-color: #32af5b;
+    background-color: #0f5025;
     color: #fff;
     padding: 5px;
+    height: 11%;
   }
   
   .logo-container {
@@ -11,7 +12,8 @@
   }
   
   .logo {
-    width: 70px; 
+    width: 70px;
+    margin-left: -98px; 
     height: 70px; 
     border-radius: 50px;
     background-size: 120% 120%;
@@ -19,10 +21,11 @@
     
   }
 
+
   .logo-text {
     font-family: 'Adam Script', sans-serif;
     color: #DDAC84; 
-    margin-left: 10px; 
+    margin-left: 2px; 
   }
   
   .navbar-nav {
@@ -44,19 +47,22 @@
   }
   
   .nav-link {
-    color: #fff;
-    margin-right: 8px; 
+    color: #c9bc83;
     text-decoration: none;
-  }
+    padding: 8px;
+     
+   }
   
   .nav-link:hover {
-    text-decoration: underline;
+    transition: 1ms;
+    color: #fff;
+    text-decoration: none;
   }
   
   .user-profile {
     position: relative;
     display: inline-block;
-    margin-left: auto; 
+    margin-left: 150px; 
     padding-top: 12px;
   }
   
@@ -70,7 +76,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #e9dede;
+    background-color: #c9bc83;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='grey'%3E%3Cpath d='M20 22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13Z'%3E%3C/path%3E%3C/svg%3E");
     
   }
@@ -78,7 +84,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #c9bc83;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -98,4 +104,5 @@
   .user-profile:hover .dropdown-content {
     display: block;
   }
-  
+     
+     
